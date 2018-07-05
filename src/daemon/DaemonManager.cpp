@@ -166,9 +166,9 @@ bool DaemonManager::stopWatcher(NetworkType::Type nettype) const
             if(counter >= 5) {
                 qDebug() << "Killing it! ";
 #ifdef Q_OS_WIN
-                QProcess::execute("taskkill /F /IM lokid.exe");
+                QProcess::execute("taskkill /F /IM blooddonationcoind.exe");
 #else
-                QProcess::execute("pkill lokid");
+                QProcess::execute("pkill blooddonationcoind");
 #endif
             }
 
@@ -300,9 +300,9 @@ DaemonManager::DaemonManager(QObject *parent)
 
     // Platform depetent path to lokid
 #ifdef Q_OS_WIN
-    m_lokid = QApplication::applicationDirPath() + "/lokid.exe";
+    m_lokid = QApplication::applicationDirPath() + "/blooddonationcoind.exe";
 #elif defined(Q_OS_UNIX)
-    m_lokid = QApplication::applicationDirPath() + "/lokid";
+    m_lokid = QApplication::applicationDirPath() + "/blooddonationcoind";
 #endif
 
     if (m_lokid.length() == 0) {

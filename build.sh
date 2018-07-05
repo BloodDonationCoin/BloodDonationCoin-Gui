@@ -93,7 +93,7 @@ fi
 if [ "$platform" == "darwin" ]; then
     BIN_PATH=$BIN_PATH/loki-wallet-gui.app/Contents/MacOS/
 elif [ "$platform" == "mingw64" ] || [ "$platform" == "mingw32" ]; then
-    LOKID_EXEC=lokid.exe
+    LOKID_EXEC=blooddonationcoind.exe
 fi
 
 # force version update
