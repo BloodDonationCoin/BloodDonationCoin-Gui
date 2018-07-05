@@ -999,7 +999,7 @@ ApplicationWindow {
         property bool   allow_background_mining : false
         property bool   miningIgnoreBattery : true
         property var    nettype: NetworkType.MAINNET
-        property string daemon_address: nettype == NetworkType.TESTNET ? "localhost:38151" : nettype == NetworkType.STAGENET ? "localhost:38154" : "localhost:22023"
+        property string daemon_address: nettype == NetworkType.TESTNET ? "localhost:38151" : nettype == NetworkType.STAGENET ? "localhost:38154" : "localhost:28882"
         property string payment_id
         property int    restore_height : 0
         property bool   is_recovering : false
