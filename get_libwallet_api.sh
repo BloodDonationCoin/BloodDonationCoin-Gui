@@ -1,5 +1,5 @@
 #!/bin/bash
-LOKI_URL=https://github.com/loki-project/loki.git
+LOKI_URL=https://github.com/BloodDonationCoin/BloodDonationCoin.git
 LOKI_BRANCH=master
 
 pushd $(pwd)
