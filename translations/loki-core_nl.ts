@@ -3462,7 +3462,7 @@ Ringgrootte: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="1796"/>
-        <source>New version of loki-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <source>New version of blooddonationcoin-wallet-gui is available: %1&lt;br&gt;%2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

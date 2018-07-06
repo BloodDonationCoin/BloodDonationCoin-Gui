@@ -91,7 +91,7 @@ if [ "$ANDROID" != true ] && ([ "$platform" == "linux32" ] || [ "$platform" == "
 fi
 
 if [ "$platform" == "darwin" ]; then
-    BIN_PATH=$BIN_PATH/loki-wallet-gui.app/Contents/MacOS/
+    BIN_PATH=$BIN_PATH/blooddonationcoin-wallet-gui.app/Contents/MacOS/
 elif [ "$platform" == "mingw64" ] || [ "$platform" == "mingw32" ]; then
     LOKID_EXEC=blooddonationcoind.exe
 fi
@@ -109,7 +109,7 @@ if ! QMAKE=$(find_command qmake qmake-qt5); then
     echo "Failed to find suitable qmake command."
     exit 1
 fi
-$QMAKE ../loki-wallet-gui.pro "$CONFIG" || exit
+$QMAKE ../blooddonationcoin-wallet-gui.pro "$CONFIG" || exit
 $MAKE || exit 
 
 # Copy lokid to bin folder

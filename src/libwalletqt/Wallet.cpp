@@ -724,7 +724,7 @@ QString Wallet::getDaemonLogPath() const
 
 QString Wallet::getWalletLogPath() const
 {
-    const QString filename("loki-wallet-gui.log");
+    const QString filename("blooddonationcoin-wallet-gui.log");
 
 #ifdef Q_OS_MACOS
     return QStandardPaths::standardLocations(QStandardPaths::HomeLocation).at(0) + "/Library/Logs/" + filename;

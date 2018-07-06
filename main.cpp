@@ -124,7 +124,7 @@ int main(int argc, char *argv[])
     Monero::Utils::onStartup();
 
     // Log settings
-    Monero::Wallet::init(argv[0], "loki-wallet-gui");
+    Monero::Wallet::init(argv[0], "blooddonationcoin-wallet-gui");
 //    qInstallMessageHandler(messageHandler);
 
     qDebug() << "app startd";
