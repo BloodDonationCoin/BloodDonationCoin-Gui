@@ -63,7 +63,7 @@ fi
 source ./utils.sh
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-LOKI_DIR=blooddonationcoind
+LOKI_DIR=blooddonationcoin
 LOKID_EXEC=blooddonationcoind
 
 MAKE='make'
