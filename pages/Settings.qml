@@ -565,7 +565,7 @@ Rectangle {
             id: guiLokiVersion
             Layout.fillWidth: true
             font.pixelSize: 14
-            text: qsTr("Embedded Loki Version: ") + Version.GUI_LOKI_VERSION + translationManager.emptyString
+            text: qsTr("Embedded Loki Version: ") + Version.GUI_BLOODDONATIONCOIN_VERSION + translationManager.emptyString
         }
         TextBlock {
             id: restoreHeightText

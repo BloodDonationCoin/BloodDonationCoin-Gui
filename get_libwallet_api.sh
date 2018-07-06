@@ -63,14 +63,14 @@ else
     pushd "$BLOODDONATIONCOIN_DIR"
     get_tag
     popd
-    echo "latest libwallet version: $GUI_LOKI_VERSION"
+    echo "latest libwallet version: $GUI_BLOODDONATIONCOIN_VERSION"
     echo "Installed libwallet version: $VERSIONTAG"
     # check if recent
-    if [ "$VERSIONTAG" != "$GUI_LOKI_VERSION" ]; then
-        echo "Building new libwallet version $GUI_LOKI_VERSION"
+    if [ "$VERSIONTAG" != "$GUI_BLOODDONATIONCOIN_VERSION" ]; then
+        echo "Building new libwallet version $GUI_BLOODDONATIONCOIN_VERSION"
         BUILD_LIBWALLET=true
     else
-        echo "latest libwallet ($GUI_LOKI_VERSION) is already built. Remove loki/lib/libwallet_merged.a to force rebuild"
+        echo "latest libwallet ($GUI_BLOODDONATIONCOIN_VERSION) is already built. Remove loki/lib/libwallet_merged.a to force rebuild"
     fi
 fi
 
@@ -79,7 +79,7 @@ if [ "$BUILD_LIBWALLET" != true ]; then
     return
 fi
 
-echo "GUI_LOKI_VERSION=\"$VERSIONTAG\"" > $BLOODDONATIONCOIN_DIR/version.sh
+echo "GUI_BLOODDONATIONCOIN_VERSION=\"$VERSIONTAG\"" > $BLOODDONATIONCOIN_DIR/version.sh
 
 ## Continue building libwallet
 
