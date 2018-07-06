@@ -432,7 +432,7 @@ OTHER_FILES += \
 
 DISTFILES += \
     notes.txt \
-    loki/src/wallet/CMakeLists.txt \
+    blooddonationcoin/src/wallet/CMakeLists.txt \
     components/MobileHeader.qml
 
 
