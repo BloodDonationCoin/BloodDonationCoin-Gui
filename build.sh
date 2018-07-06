@@ -63,8 +63,8 @@ fi
 source ./utils.sh
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-LOKI_DIR=loki
-LOKID_EXEC=lokid
+LOKI_DIR=blooddonationcoind
+LOKID_EXEC=blooddonationcoind
 
 MAKE='make'
 if [[ $platform == *bsd* ]]; then

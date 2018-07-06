@@ -8,7 +8,7 @@ ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $ROOT_DIR/utils.sh
 
 INSTALL_DIR=$ROOT_DIR/wallet
-LOKI_DIR=$ROOT_DIR/loki
+LOKI_DIR=$ROOT_DIR/blooddonationcoind
 BUILD_LIBWALLET=false
 
 # init and update loki submodule
