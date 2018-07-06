@@ -1,6 +1,6 @@
 #!/bin/bash
-LOKI_URL=https://github.com/BloodDonationCoin/BloodDonationCoin.git
-LOKI_BRANCH=master
+BLOODDONATIONCOIN_URL=https://github.com/BloodDonationCoin/BloodDonationCoin.git
+BLOODDONATIONCOIN_BRANCH=master
 
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -11,7 +11,7 @@ INSTALL_DIR=$ROOT_DIR/wallet
 BLOODDONATIONCOIN_DIR=$ROOT_DIR/blooddonationcoin
 BUILD_LIBWALLET=false
 
-# init and update loki submodule
+# init and update blooddonationcoin submodule
 if [ ! -d $BLOODDONATIONCOIN_DIR/src ]; then
     git submodule init blooddonationcoin
 fi
@@ -19,28 +19,28 @@ git submodule update --remote
 git -C $BLOODDONATIONCOIN_DIR fetch
 # git -C $BLOODDONATIONCOIN_DIR checkout v0.12.0.0
 
-# get loki core tag
+# get blooddonationcoin core tag
 get_tag
-# create local loki branch
+# create local blooddonationcoin branch
 git -C $BLOODDONATIONCOIN_DIR checkout -B $VERSIONTAG
 
 git -C $BLOODDONATIONCOIN_DIR submodule init
 git -C $BLOODDONATIONCOIN_DIR submodule update
 
-# Merge loki PR dependencies
+# Merge blooddonationcoin PR dependencies
 
 # Workaround for git username requirements
 # Save current user settings and revert back when we are done with merging PR's
 OLD_GIT_USER=$(git -C $BLOODDONATIONCOIN_DIR config --local user.name)
 OLD_GIT_EMAIL=$(git -C $BLOODDONATIONCOIN_DIR config --local user.email)
-git -C $BLOODDONATIONCOIN_DIR config user.name "Loki GUI"
-git -C $BLOODDONATIONCOIN_DIR config user.email "gui@loki.local"
+git -C $BLOODDONATIONCOIN_DIR config user.name "BloodDonationCoin GUI"
+git -C $BLOODDONATIONCOIN_DIR config user.email "gui@blooddonationcoin.local"
 # check for PR requirements in most recent commit message (i.e requires #xxxx)
 for PR in $(git log --format=%B -n 1 | grep -io "requires #[0-9]*" | sed 's/[^0-9]*//g'); do
-    echo "Merging loki push request #$PR"
+    echo "Merging blooddonationcoin push request #$PR"
     # fetch pull request and merge
     git -C $BLOODDONATIONCOIN_DIR fetch origin pull/$PR/head:PR-$PR
-    git -C $BLOODDONATIONCOIN_DIR merge --quiet PR-$PR  -m "Merge loki PR #$PR"
+    git -C $BLOODDONATIONCOIN_DIR merge --quiet PR-$PR  -m "Merge blooddonationcoin PR #$PR"
     BUILD_LIBWALLET=true
 done
 
@@ -54,7 +54,7 @@ if [ ! -f $BLOODDONATIONCOIN_DIR/lib/libwallet_merged.a ]; then
     BUILD_LIBWALLET=true
 # Build libwallet if no previous version file exists
 elif [ ! -f $BLOODDONATIONCOIN_DIR/version.sh ]; then 
-    echo "loki/version.h not found - Building libwallet"
+    echo "blooddonationcoin/version.h not found - Building libwallet"
     BUILD_LIBWALLET=true
 ## Compare previously built version with submodule + merged PR's version. 
 else
@@ -70,7 +70,7 @@ else
         echo "Building new libwallet version $GUI_BLOODDONATIONCOIN_VERSION"
         BUILD_LIBWALLET=true
     else
-        echo "latest libwallet ($GUI_BLOODDONATIONCOIN_VERSION) is already built. Remove loki/lib/libwallet_merged.a to force rebuild"
+        echo "latest libwallet ($GUI_BLOODDONATIONCOIN_VERSION) is already built. Remove blooddonationcoin/lib/libwallet_merged.a to force rebuild"
     fi
 fi
 
@@ -118,7 +118,7 @@ else
 fi
 
 
-echo "cleaning up existing loki build dir, libs and includes"
+echo "cleaning up existing blooddonationcoin build dir, libs and includes"
 rm -fr $BLOODDONATIONCOIN_DIR/build
 rm -fr $BLOODDONATIONCOIN_DIR/lib
 rm -fr $BLOODDONATIONCOIN_DIR/include
@@ -218,7 +218,7 @@ eval $make_exec  -j$CPU_CORE_COUNT
 eval $make_exec  install -j$CPU_CORE_COUNT
 popd
 
-# Build lokid
+# Build blooddonationcoind
 # win32 need to build daemon manually with msys2 toolchain
 if [ "$platform" != "mingw32" ] && [ "$ANDROID" != true ]; then
     pushd $BLOODDONATIONCOIN_DIR/build/$BUILD_TYPE/src/daemon
