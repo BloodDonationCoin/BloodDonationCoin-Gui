@@ -13,7 +13,7 @@ BUILD_LIBWALLET=false
 
 # init and update loki submodule
 if [ ! -d $LOKI_DIR/src ]; then
-    git submodule init loki
+    git submodule init blooddonationcoin
 fi
 git submodule update --remote
 git -C $LOKI_DIR fetch
