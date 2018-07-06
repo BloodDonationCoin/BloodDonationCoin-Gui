@@ -63,8 +63,8 @@ fi
 source ./utils.sh
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-LOKI_DIR=blooddonationcoin
-LOKID_EXEC=blooddonationcoind
+BLOODDONATIONCOIN_DIR=blooddonationcoin
+BLOODDONATIONCOIND_EXEC=blooddonationcoind
 
 MAKE='make'
 if [[ $platform == *bsd* ]]; then
@@ -93,13 +93,13 @@ fi
 if [ "$platform" == "darwin" ]; then
     BIN_PATH=$BIN_PATH/blooddonationcoin-wallet-gui.app/Contents/MacOS/
 elif [ "$platform" == "mingw64" ] || [ "$platform" == "mingw32" ]; then
-    LOKID_EXEC=blooddonationcoind.exe
+    BLOODDONATIONCOIND_EXEC=blooddonationcoind.exe
 fi
 
 # force version update
 get_tag
 echo "var GUI_VERSION = \"$TAGNAME\"" > version.js
-pushd "$LOKI_DIR"
+pushd "$BLOODDONATIONCOIN_DIR"
 get_tag
 popd
 echo "var GUI_LOKI_VERSION = \"$TAGNAME\"" >> version.js
@@ -114,7 +114,7 @@ $MAKE || exit
 
 # Copy lokid to bin folder
 if [ "$platform" != "mingw32" ] && [ "$ANDROID" != true ]; then
-cp ../$LOKI_DIR/bin/$LOKID_EXEC $BIN_PATH
+cp ../$BLOODDONATIONCOIN_DIR/bin/$BLOODDONATIONCOIND_EXEC $BIN_PATH
 fi
 
 # make deploy
