@@ -2,7 +2,7 @@ TEMPLATE = app
 
 QT += qml quick widgets
 
-WALLET_ROOT=$$PWD/loki
+WALLET_ROOT=$$PWD/blooddonationcoin
 
 CONFIG += c++11 link_pkgconfig
 packagesExist(libpcsclite) {
