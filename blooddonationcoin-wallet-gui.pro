@@ -11,7 +11,7 @@ packagesExist(libpcsclite) {
 QMAKE_CXXFLAGS += -fPIC -fstack-protector
 QMAKE_LFLAGS += -fstack-protector
 
-# cleaning "auto-generated" bitloki directory on "make distclean"
+# cleaning "auto-generated" blooddonationcoin directory on "make distclean"
 QMAKE_DISTCLEAN += -r $$WALLET_ROOT
 
 INCLUDEPATH +=  $$WALLET_ROOT/include \
@@ -287,7 +287,7 @@ linux {
             -Wl,-Bdynamic \
             -lGL
     }
-    # currently loki has an issue with "static" build and linunwind-dev,
+    # currently blooddonationcoin has an issue with "static" build and linunwind-dev,
     # so we link libunwind-dev only for non-Ubuntu distros
     CONFIG(libunwind_off) {
         message(Building without libunwind)

@@ -1787,7 +1787,7 @@ La vecchia cache del portafoglio verrà rinominata e potrà essere ripristinata 
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="114"/>
-        <source>&lt;p&gt;In order to obscure which inputs in a Loki transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Loki uses.&lt;/p&gt;&lt;p&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Loki clones) yourself using the loki-blockchain-blackball tool to create a list of known spent outputs.&lt;/p&gt;</source>
+        <source>&lt;p&gt;In order to obscure which inputs in a Loki transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Loki uses.&lt;/p&gt;&lt;p&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Loki clones) yourself using the blooddonationcoin-blockchain-blackball tool to create a list of known spent outputs.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

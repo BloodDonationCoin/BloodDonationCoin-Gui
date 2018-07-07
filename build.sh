@@ -112,7 +112,7 @@ fi
 $QMAKE ../blooddonationcoin-wallet-gui.pro "$CONFIG" || exit
 $MAKE || exit 
 
-# Copy lokid to bin folder
+# Copy blooddonationcoind to bin folder
 if [ "$platform" != "mingw32" ] && [ "$ANDROID" != true ]; then
 cp ../$BLOODDONATIONCOIN_DIR/bin/$BLOODDONATIONCOIND_EXEC $BIN_PATH
 fi

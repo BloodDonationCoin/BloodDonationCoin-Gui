@@ -51,7 +51,7 @@ Rectangle {
     property string trackingLineText: ""
 
     function makeQRCodeString() {
-        var s = "loki:"
+        var s = "blooddonationcoin:"
         var nfields = 0
         s += current_address;
         var amount = amountLine.text.trim()

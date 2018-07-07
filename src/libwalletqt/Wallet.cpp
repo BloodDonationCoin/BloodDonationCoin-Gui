@@ -719,7 +719,7 @@ void Wallet::setWalletCreationHeight(quint64 height)
 
 QString Wallet::getDaemonLogPath() const
 {
-    return QString::fromStdString(m_walletImpl->getDefaultDataDir()) + "/loki.log";
+    return QString::fromStdString(m_walletImpl->getDefaultDataDir()) + "/blooddonationcoin.log";
 }
 
 QString Wallet::getWalletLogPath() const

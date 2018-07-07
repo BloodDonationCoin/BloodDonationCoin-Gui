@@ -96,7 +96,7 @@ Rectangle {
 
         Text {
             text: qsTr("This page allows you to interact with the shared ring database. " +
-                       "This database is meant for use by Loki wallets as well as wallets from Loki clones which reuse the Loki keys.") + translationManager.emptyString
+                       "This database is meant for use by Blood Donation Coin wallets as well as wallets from Blood Donation Coin clones which reuse the Blood Donation Coin keys.") + translationManager.emptyString
             wrapMode: Text.Wrap
             Layout.fillWidth: true
             font.family: Style.fontRegular.name
@@ -112,13 +112,13 @@ Rectangle {
             onLinkActivated: {
                 sharedRingDBDialog.title  = qsTr("Blackballed Outputs") + translationManager.emptyString;
                 sharedRingDBDialog.text = qsTr(
-                    "<p>In order to obscure which inputs in a Loki transaction are being spent, a third party should not be able " +
+                    "<p>In order to obscure which inputs in a blooddonationcoin transaction are being spent, a third party should not be able " +
                     "to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection " +
                     "afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being " +
                     "actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers " +
-                    "of privacy protection Loki uses.</p>" +
-                    "<p>Alternatively, you can scan the blockchain (and the blockchain of key-reusing Loki clones) yourself " +
-                    "using the loki-blockchain-blackball tool to create a list of known spent outputs.</p>"
+                    "of privacy protection Blood Donation Coin uses.</p>" +
+                    "<p>Alternatively, you can scan the blockchain (and the blockchain of key-reusing blooddonationcoin clones) yourself " +
+                    "using the blooddonationcoin-blockchain-blackball tool to create a list of known spent outputs.</p>"
                 )
                 sharedRingDBDialog.icon = StandardIcon.Information
                 sharedRingDBDialog.open()
@@ -241,16 +241,16 @@ Rectangle {
             onLinkActivated: {
                 sharedRingDBDialog.title  = qsTr("Rings") + translationManager.emptyString;
                 sharedRingDBDialog.text = qsTr(
-                    "In order to avoid nullifying the protection afforded by Loki's ring signatures, an output should not " +
+                    "In order to avoid nullifying the protection afforded by Blood Donation Coin's ring signatures, an output should not " +
                     "be spent with different rings on different blockchains. While this is normally not a concern, it can become one " +
-                    "when a key-reusing Loki clone allows you do spend existing outputs. In this case, you need to ensure this " +
+                    "when a key-reusing Blood Donation Coin clone allows you do spend existing outputs. In this case, you need to ensure this " +
                     "existing outputs uses the same ring on both chains.<br>" +
-                    "This will be done automatically by Loki and any key-reusing software which is not trying to actively strip " +
+                    "This will be done automatically by Blood Donation Coin and any key-reusing software which is not trying to actively strip " +
                     "you of your privacy.<br>" +
-                    "If you are using a key-reusing Loki clone too, and this clone does not include this protection, you can still " +
+                    "If you are using a key-reusing Blood Donation Coin clone too, and this clone does not include this protection, you can still " +
                     "ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, " +
-                    "which allows you to then spend your Loki safely.<br>" +
-                    "If you do not use a key-reusing Loki clone without these safety features, then you do not need to do anything " +
+                    "which allows you to then spend your Blood Donation Coin safely.<br>" +
+                    "If you do not use a key-reusing Blood Donation Coin clone without these safety features, then you do not need to do anything " +
                     "as it is all automated.<br>"
                 )
                 sharedRingDBDialog.icon = StandardIcon.Information
@@ -262,7 +262,7 @@ Rectangle {
             textFormat: Text.RichText
             font.family: Style.fontRegular.name
             font.pixelSize: 14 * scaleRatio
-            text: qsTr("This records rings used by outputs spent on Loki on a key reusing chain, so that the same ring may be reused to avoid privacy issues.") + translationManager.emptyString
+            text: qsTr("This records rings used by outputs spent on Blood Donation Coin on a key reusing chain, so that the same ring may be reused to avoid privacy issues.") + translationManager.emptyString
             wrapMode: Text.Wrap
             Layout.fillWidth: true;
             color: Style.defaultFontColor

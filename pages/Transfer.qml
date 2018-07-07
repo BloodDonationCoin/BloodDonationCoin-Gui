@@ -244,7 +244,7 @@ Rectangle {
               labelText: qsTr("<style type='text/css'>a {text-decoration: none; color: #78BE20; font-size: 14px;}</style>\
                 Address <font size='2'></font><a href='#'>(Address Book)</a><font size='2'></font>")
                 + translationManager.emptyString
-              placeholderText: "L.."
+              placeholderText: "Bbrc.."
               onInputLabelLinkActivated: { appWindow.showPageRequest("AddressBook") }
           }
 

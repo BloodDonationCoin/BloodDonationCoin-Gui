@@ -106,9 +106,9 @@ int main(int argc, char *argv[])
 
     MainApp app(argc, argv);
 
-    app.setApplicationName("loki-gui");
-    app.setOrganizationDomain("loki.network");
-    app.setOrganizationName("loki-project");
+    app.setApplicationName("blooddonationcoin-gui");
+    app.setOrganizationDomain("blooddonationcoin.org");
+    app.setOrganizationName("Blood Donation Coin");
 
 #if defined(Q_OS_LINUX)
     if (isDesktop) app.setWindowIcon(QIcon(":/images/appicon.ico"));
@@ -225,11 +225,11 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("daemonManager", daemonManager);
 #endif
 
-//  export to QML loki accounts root directory
+//  export to QML Blood Donation Coin accounts root directory
 //  wizard is talking about where
 //  to save the wallet file (.keys, .bin), they have to be user-accessible for
-//  backups - I reckon we save that in My Documents\Loki Accounts\ on
-//  Windows, ~/Loki Accounts/ on nix / osx
+//  backups - I reckon we save that in My Documents\Blood Donation Coin Accounts\ on
+//  Windows, ~/Blood Donation Coin Accounts/ on nix / osx
 #if defined(Q_OS_WIN) || defined(Q_OS_IOS)
     QStringList lokiAccountsRootDir = QStandardPaths::standardLocations(QStandardPaths::DocumentsLocation);
 #else

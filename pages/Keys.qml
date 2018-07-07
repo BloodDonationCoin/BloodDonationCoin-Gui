@@ -253,7 +253,7 @@ Rectangle {
         seedText.text = currentWallet.seed
 
         if(typeof currentWallet != "undefined") {
-            viewOnlyQRCode.source = "image://qrcode/loki:" + currentWallet.address+"?secret_view_key="+currentWallet.secretViewKey+"&restore_height="+currentWallet.restoreHeight
+            viewOnlyQRCode.source = "image://qrcode/blooddonationcoin:" + currentWallet.address+"?secret_view_key="+currentWallet.secretViewKey+"&restore_height="+currentWallet.restoreHeight
             fullWalletQRCode.source = viewOnlyQRCode.source +"&secret_spend_key="+currentWallet.secretSpendKey
 
             if(currentWallet.viewOnly) {
