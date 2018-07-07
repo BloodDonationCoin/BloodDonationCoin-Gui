@@ -250,7 +250,7 @@ int main(int argc, char *argv[])
 
     if (!lokiAccountsRootDir.empty()) 
     {
-        QString lokiAccountsDir = lokiAccountsRootDir.at(0) + "/Loki/wallets";
+        QString lokiAccountsDir = lokiAccountsRootDir.at(0) + "/BloodDonationCoin/wallets";
         engine.rootContext()->setContextProperty("lokiAccountsDir", lokiAccountsDir);
     }
 
@@ -260,7 +260,7 @@ int main(int argc, char *argv[])
     if (accountName.isEmpty())
         accountName = qgetenv("USERNAME"); // Windows
     if (accountName.isEmpty())
-        accountName = "My Loki Account";
+        accountName = "My Blood Donation Coin Account";
 
     engine.rootContext()->setContextProperty("defaultAccountName", accountName);
     engine.rootContext()->setContextProperty("applicationDirectory", QApplication::applicationDirPath());
