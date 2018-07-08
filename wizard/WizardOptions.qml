@@ -72,7 +72,7 @@ ColumnLayout {
             //renderType: Text.NativeRendering
             color: Style.defaultFontColor
             wrapMode: Text.Wrap
-            text: qsTr("Welcome To Loki!") + translationManager.emptyString
+            text: qsTr("Welcome To Blood Donation Coin!") + translationManager.emptyString
         }
 
         Text {
