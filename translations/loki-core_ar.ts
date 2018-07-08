@@ -706,7 +706,7 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="75"/>
-        <source>Mining with your computer helps strengthen the Loki network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Loki. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <source>Mining with your computer helps strengthen the Blood Dination Coin network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Blood Dination Coin. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1496,7 +1496,7 @@ The old wallet cache file will be renamed and can be restored later.
 
     <message>
         <location filename="../pages/Settings.qml" line="565"/>
-        <source>Embedded Loki Version: </source>
+        <source>Embedded Blood Dination Coin Version: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1574,12 +1574,12 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="243"/>
-        <source>In order to avoid nullifying the protection afforded by Loki&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Loki clone allows you do spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Loki and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Loki clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Loki safely.&lt;br&gt;If you do not use a key-reusing Loki clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <source>In order to avoid nullifying the protection afforded by Blood Dination Coin&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Blood Dination Coin clone allows you do spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Blood Dination Coin and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Blood Dination Coin clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Blood Dination Coin safely.&lt;br&gt;If you do not use a key-reusing Blood Dination Coin clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="265"/>
-        <source>This records rings used by outputs spent on Loki on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <source>This records rings used by outputs spent on Blood Dination Coin on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1621,7 +1621,7 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="98"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Loki wallets as well as wallets from Loki clones which reuse the Loki keys.</source>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Blood Dination Coin wallets as well as wallets from Blood Dination Coin clones which reuse the Blood Dination Coin keys.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1638,7 +1638,7 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="114"/>
-        <source>&lt;p&gt;In order to obscure which inputs in a Loki transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Loki uses.&lt;/p&gt;&lt;p&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Loki clones) yourself using the blooddonationcoin-blockchain-blackball tool to create a list of known spent outputs.&lt;/p&gt;</source>
+        <source>&lt;p&gt;In order to obscure which inputs in a Blood Dination Coin transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Blood Dination Coin uses.&lt;/p&gt;&lt;p&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Blood Dination Coin clones) yourself using the blooddonationcoin-blockchain-blackball tool to create a list of known spent outputs.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2048,7 +2048,7 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="550"/>
-        <source>Loki sent successfully</source>
+        <source>Blood Dination Coin sent successfully</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2367,12 +2367,12 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="80"/>
-        <source>We’re almost there - let’s just configure some Loki preferences</source>
+        <source>We’re almost there - let’s just configure some Blood Dination Coin preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="98"/>
-        <source>Kickstart the Loki blockchain?</source>
+        <source>Kickstart the Blood Dination Coin blockchain?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2387,12 +2387,12 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="141"/>
-        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Loki instance. However, storing the full blockchain is beneficial to the security of the Loki network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
+        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Blood Dination Coin instance. However, storing the full blockchain is beneficial to the security of the Blood Dination Coin network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="170"/>
-        <source>Mining secures the Loki network, and also pays a small reward for the work done. This option will let Loki mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <source>Mining secures the Blood Dination Coin network, and also pays a small reward for the work done. This option will let Blood Dination Coin mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2435,7 +2435,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardDaemonSettings</name>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="113"/>
-        <source>To be able to communicate with the Loki network your wallet needs to be connected to a Loki node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
+        <source>To be able to communicate with the Blood Dination Coin network your wallet needs to be connected to a Blood Dination Coin node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2476,7 +2476,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="94"/>
-        <source>Loki development is solely supported by donations</source>
+        <source>Blood Dination Coin development is solely supported by donations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2491,12 +2491,12 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="163"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Loki development. For instance, a 50% autodonation take a transaction fee of 0.005 LOK and add a 0.0025 LOK to support Loki development.</source>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Blood Dination Coin development. For instance, a 50% autodonation take a transaction fee of 0.005 LOK and add a 0.0025 LOK to support Blood Dination Coin development.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="191"/>
-        <source>Mining secures the Loki network, and also pays a small reward for the work done. This option will let Loki mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <source>Mining secures the Blood Dination Coin network, and also pays a small reward for the work done. This option will let Blood Dination Coin mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2612,7 +2612,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardMain.qml" line="365"/>
-        <source>USE LOKI</source>
+        <source>USE BBRC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2751,7 +2751,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="75"/>
-        <source>Welcome To Loki!</source>
+        <source>Welcome To Blood Dination Coin!</source>
         <translation type="unfinished"></translation>
     </message>
 	<message>
@@ -2842,7 +2842,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="72"/>
-        <source>Welcome To Loki!</source>
+        <source>Welcome To Blood Dination Coin!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3066,17 +3066,17 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
 
     <message>
         <location filename="../main.qml" line="783"/>
-        <source>Loki sent successfully: %1 transaction(s) </source>
+        <source>Blood Dination Coin sent successfully: %1 transaction(s) </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.qml" line="854"/>
-        <source>This address received %1 Loki, but the transaction is not yet mined</source>
+        <source>This address received %1 Blood Dination Coin, but the transaction is not yet mined</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.qml" line="857"/>
-        <source>This address received %1 Loki, with %2 confirmation(s).</source>
+        <source>This address received %1 Blood Dination Coin, with %2 confirmation(s).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3132,7 +3132,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../main.qml" line="1298"/>
-        <source>Loki</source>
+        <source>Blood Dination Coin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
